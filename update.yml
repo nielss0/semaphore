@@ -1,6 +1,6 @@
 - hosts: servers
   become: true
   tasks:
-  - name: Upgrade the OS (apt-get dist-upgrade)
-    ansible.builtin.apt:
-      upgrade: dist
+    - name: Upgrade the OS (apt-get dist-upgrade)
+      ansible.builtin.apt:
+        upgrade: dist
